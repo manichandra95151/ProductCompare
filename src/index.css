@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  .fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+
+
+
+/* Custom Scrollbar for Webkit browsers (Chrome, Safari) */
+.skills-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.skills-scrollbar::-webkit-scrollbar-track {
+  background: #2a2a2a; /* Match the background */
+}
+
+.skills-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #555; /* Scrollbar color */
+  border-radius: 10px;
+  border: 3px solid #2a2a2a; /* Background behind the scrollbar */
+}
+
+/* Firefox scrollbar */
+.skills-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #2a2a2a;
+}
+
+
+
+
+
+
